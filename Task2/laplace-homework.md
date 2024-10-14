@@ -18,17 +18,17 @@
 
 1) Линейная зависимость между признаками и целевой переменной:
 
-   $$f(X, \theta) = \theta^T X$$
+$$f(X, \theta) = \theta^T X$$
 
    где $\theta$ - параметры модели
 
 2) Целевая переменная $y$ генерируется из распределения Лапласа:
 
-   $$y \sim \text{Laplace}(f(X, \theta), b)$$
+$$y \sim \text{Laplace}(f(X, \theta), b)$$
 
    Плотность распределения Лапласа:
 
-   $$p(y|X, \theta, b) = \frac{1}{2b} \exp\left(-\frac{|y - f(X, \theta)|}{b}\right)$$
+$$p(y|X, \theta, b) = \frac{1}{2b} \exp\left(-\frac{|y - f(X, \theta)|}{b}\right)$$
 
    где $b > 0$ - параметр масштаба
 
