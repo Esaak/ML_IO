@@ -18,7 +18,7 @@
 
 1) Линейная зависимость между признаками и целевой переменной:
 
-   $$f(X, \theta) = \theta^TX$$
+   $$f(X, \theta) = \theta^T X$$
 
    где $\theta$ - параметры модели
 
@@ -83,6 +83,7 @@ $$\hat{\Theta} = \arg\max_{\Theta} \ln L(\theta, b|X, y)$$
 $$\ln L(\theta, b|X, y) = \sum\limits_{i=1}^n \ln\left(\frac{1}{2b} \exp\left(-\frac{|y_i - f(X_i, \theta)|}{b}\right)\right) = \sum_{i=1}^n \left(\ln\frac{1}{2b} - \frac{|y_i - f(X_i, \theta)|}{b}\right) = n \ln\frac{1}{2b} - \frac{1}{b}\sum_{i=1}^n |y_i - f(X_i, \theta)|$$
 
 Максимизация этого выражения эквивалентна минимизации:
+
 $$\arg\max_{\Theta}\left(n \ln\frac{1}{2b} - \frac{1}{b}\sum_{i=1}^n |y_i - f(X_i, \theta)|\right) = \arg\min_{\Theta}\left(\frac{1}{b}\sum\limits_{i=1}^n |y_i - f(X_i, \theta)| - n\ln\frac{1}{2b}\right)$$
 
 $$\arg\min_{\Theta}\left(\frac{1}{b}\sum\limits_{i=1}^n |y_i - f(X_i, \theta)| - n\ln\frac{1}{2b}\right) = \arg\min_{\Theta}\frac{1}{b}\sum\limits_{i=1}^n |y_i - f(X_i, \theta)|$$
