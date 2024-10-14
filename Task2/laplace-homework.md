@@ -73,7 +73,9 @@ $$L(\theta, b|X, y) = \prod\limits_{i=1}^n L_i(\theta, b|X_i, y_i) = \prod\limit
 $$\hat{\Theta} = \arg\max_{\Theta} L(\theta, b|X, y)$$
 
 Для упрощения вычислений обычно максимизируют логарифм правдоподобия:
+
 $$\arg\max_{x} f(x) = \arg\max_{x} \ln f(x)$$
+
 $$\hat{\Theta} = \arg\max_{\Theta} \ln L(\theta, b|X, y)$$
 
 ## Вывод функции потерь
